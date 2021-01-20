@@ -1,3 +1,7 @@
+# Important Note!
+While the used libraries are pretty common (e.g. pandas), the programme requires them to be installed. I will try to solve this issue as soon as possible.
+
+
 # Movie Recommendation System
 Programme written in python, which inputs data from IMDB .csv file to a database created in MySQL. It selects proper data and creates table with data that will be used in the system. Based on given title it downloads it’s metadata from database and compares it with other movies. It calculates the similarity between the given movie and the rest of the movies after it changes the metadata into vectors. Programme lets the users choose whether they are interested more in director, actors, description or genre similarity. It returns the list of 10 movies that are most similar to given title. User has an option to work with database (read further for more information) or with .csv file. Both return the same results.
 
