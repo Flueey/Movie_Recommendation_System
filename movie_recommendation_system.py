@@ -45,7 +45,7 @@ def find_recommendations(recommendation_df, movie_data, title, director_influenc
     
     #Reduce size of matrix
     count_matrix = count_matrix.astype(np.float32)
-    #Reduce index by 1 since they are not even
+    #Reduce index by 1 since they are not even, cosine_sim is counted between a matrix and a specific row
     cosine_sim = cosine_similarity(count_matrix, count_matrix[idx-1])
     
     #Enumerate returns true indexes of the movies
